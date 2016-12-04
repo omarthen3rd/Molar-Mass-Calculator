@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56448DD8963F9F9E2613748E /* Pods_PTable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1CC36706B4AE9835640FF87 /* Pods_PTable.framework */; };
 		5661BF5C1DEB9422008059AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5661BF5B1DEB9422008059AD /* AppDelegate.swift */; };
 		5661BF5E1DEB9422008059AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5661BF5D1DEB9422008059AD /* ViewController.swift */; };
 		5661BF611DEB9422008059AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5661BF5F1DEB9422008059AD /* Main.storyboard */; };
@@ -14,6 +15,10 @@
 		5661BF661DEB9422008059AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5661BF641DEB9422008059AD /* LaunchScreen.storyboard */; };
 		5661BF711DEB9422008059AD /* PTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5661BF701DEB9422008059AD /* PTableTests.swift */; };
 		5661BF7C1DEB9422008059AD /* PTableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5661BF7B1DEB9422008059AD /* PTableUITests.swift */; };
+		5661BF8A1DEB9447008059AD /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5661BF891DEB9447008059AD /* CollectionViewCell.swift */; };
+		5661BF8C1DEB94C9008059AD /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5661BF8B1DEB94C9008059AD /* Element.swift */; };
+		56AF7DB01DEB95A300E3AE53 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56AF7DAF1DEB95A300E3AE53 /* SwiftyJSON.framework */; };
+		56AF7DB21DEB98F200E3AE53 /* pt.json in Resources */ = {isa = PBXBuildFile; fileRef = 56AF7DB11DEB98F200E3AE53 /* pt.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		314404E3348E19E0FA9D97DA /* Pods-PTable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PTable/Pods-PTable.debug.xcconfig"; sourceTree = "<group>"; };
 		5661BF581DEB9422008059AD /* PTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5661BF5B1DEB9422008059AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5661BF5D1DEB9422008059AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,12 @@
 		5661BF771DEB9422008059AD /* PTableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PTableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5661BF7B1DEB9422008059AD /* PTableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTableUITests.swift; sourceTree = "<group>"; };
 		5661BF7D1DEB9422008059AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5661BF891DEB9447008059AD /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		5661BF8B1DEB94C9008059AD /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
+		56AF7DAF1DEB95A300E3AE53 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		56AF7DB11DEB98F200E3AE53 /* pt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pt.json; sourceTree = "<group>"; };
+		B4520CC1AE5FA341135A2DAA /* Pods-PTable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTable.release.xcconfig"; path = "Pods/Target Support Files/Pods-PTable/Pods-PTable.release.xcconfig"; sourceTree = "<group>"; };
+		C1CC36706B4AE9835640FF87 /* Pods_PTable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PTable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56AF7DB01DEB95A300E3AE53 /* SwiftyJSON.framework in Frameworks */,
+				56448DD8963F9F9E2613748E /* Pods_PTable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +88,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31112E3DD7410A160EBA8EFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56AF7DAF1DEB95A300E3AE53 /* SwiftyJSON.framework */,
+				C1CC36706B4AE9835640FF87 /* Pods_PTable.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5661BF4F1DEB9422008059AD = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +104,8 @@
 				5661BF6F1DEB9422008059AD /* PTableTests */,
 				5661BF7A1DEB9422008059AD /* PTableUITests */,
 				5661BF591DEB9422008059AD /* Products */,
+				896EFF99632BC5A6F2C205B8 /* Pods */,
+				31112E3DD7410A160EBA8EFE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +123,10 @@
 			isa = PBXGroup;
 			children = (
 				5661BF5B1DEB9422008059AD /* AppDelegate.swift */,
+				5661BF891DEB9447008059AD /* CollectionViewCell.swift */,
 				5661BF5D1DEB9422008059AD /* ViewController.swift */,
+				5661BF8B1DEB94C9008059AD /* Element.swift */,
+				56AF7DB11DEB98F200E3AE53 /* pt.json */,
 				5661BF5F1DEB9422008059AD /* Main.storyboard */,
 				5661BF621DEB9422008059AD /* Assets.xcassets */,
 				5661BF641DEB9422008059AD /* LaunchScreen.storyboard */,
@@ -125,6 +153,15 @@
 			path = PTableUITests;
 			sourceTree = "<group>";
 		};
+		896EFF99632BC5A6F2C205B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				314404E3348E19E0FA9D97DA /* Pods-PTable.debug.xcconfig */,
+				B4520CC1AE5FA341135A2DAA /* Pods-PTable.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +169,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5661BF801DEB9422008059AD /* Build configuration list for PBXNativeTarget "PTable" */;
 			buildPhases = (
+				6B67F9D69E6F63D879733F69 /* [CP] Check Pods Manifest.lock */,
 				5661BF541DEB9422008059AD /* Sources */,
 				5661BF551DEB9422008059AD /* Frameworks */,
 				5661BF561DEB9422008059AD /* Resources */,
+				2DDE929C1B65731FDB075330 /* [CP] Embed Pods Frameworks */,
+				83C3F91D5698F5AC87F48982 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -238,6 +278,7 @@
 				5661BF661DEB9422008059AD /* LaunchScreen.storyboard in Resources */,
 				5661BF631DEB9422008059AD /* Assets.xcassets in Resources */,
 				5661BF611DEB9422008059AD /* Main.storyboard in Resources */,
+				56AF7DB21DEB98F200E3AE53 /* pt.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +298,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2DDE929C1B65731FDB075330 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PTable/Pods-PTable-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B67F9D69E6F63D879733F69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		83C3F91D5698F5AC87F48982 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PTable/Pods-PTable-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5661BF541DEB9422008059AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -264,6 +353,8 @@
 			files = (
 				5661BF5E1DEB9422008059AD /* ViewController.swift in Sources */,
 				5661BF5C1DEB9422008059AD /* AppDelegate.swift in Sources */,
+				5661BF8C1DEB94C9008059AD /* Element.swift in Sources */,
+				5661BF8A1DEB9447008059AD /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,10 +502,16 @@
 		};
 		5661BF811DEB9422008059AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 314404E3348E19E0FA9D97DA /* Pods-PTable.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AEA87WCYYX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/SwiftyJSON",
+				);
 				INFOPLIST_FILE = PTable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.omar.PTable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,10 +521,16 @@
 		};
 		5661BF821DEB9422008059AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4520CC1AE5FA341135A2DAA /* Pods-PTable.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AEA87WCYYX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/SwiftyJSON",
+				);
 				INFOPLIST_FILE = PTable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.omar.PTable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -512,6 +615,7 @@
 				5661BF821DEB9422008059AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5661BF831DEB9422008059AD /* Build configuration list for PBXNativeTarget "PTableTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +624,7 @@
 				5661BF851DEB9422008059AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5661BF861DEB9422008059AD /* Build configuration list for PBXNativeTarget "PTableUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +633,7 @@
 				5661BF881DEB9422008059AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

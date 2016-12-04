@@ -1,0 +1,6 @@
+framework module Pods_PTable {
+  umbrella header "Pods-PTable-umbrella.h"
+
+  export *
+  module * { export * }
+}
