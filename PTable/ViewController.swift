@@ -8,18 +8,7 @@
 
 import UIKit
 import SwiftyJSON
-
-// MARK:- UICollectionViewDelegate Methods
-
-/* extension ViewController : UICollectionViewDelegate {
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        highlightCell(indexPath: indexPath, flag: true)
-    }
-
-    func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
-        highlightCell(indexPath: indexPath, flag: false)
-    }
-} */
+import Spring
 
 extension Double {
     
@@ -41,19 +30,21 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     var newSelected = 0
     var searchController = UISearchController(searchResultsController: nil)
     
+    var stringElements = [Character]()
+    var elementsCount: [Character:Int] = [:]
+    
+    
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var searchBarPlaceholder: UIView!
     @IBOutlet weak var sumLabel: UILabel!
     @IBOutlet weak var countLabel: UILabel!
+    @IBOutlet weak var countSpring: SpringLabel!
     @IBAction func clearButton(_ sender: Any) {
         
-        // let indexPath = collectionView.indexPathsForSelectedItems! as [IndexPath]
-        // let cell = collectionView.cellForItem(at: [indexPath.row])
         listOfNumbers.removeAll()
         tapCount = 0
         countLabel.text = ""
         sumLabel.text = "0.0"
-        
         
     }
     
@@ -62,6 +53,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         // Do any additional setup after loading the view, typically from a nib.
         
         getElements()
+        readElements("H20")
         
         searchController = UISearchController(searchResultsController: nil)
         searchController.searchResultsUpdater = self
@@ -92,15 +84,22 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         }
     }
     
-    func highlightCell(indexPath : NSIndexPath, flag: Bool) {
+    func readElements(_ string: String) {
         
-        let cell = collectionView.cellForItem(at: indexPath as IndexPath)
+        var letters = CharacterSet.letters
         
-        if flag {
-            cell?.contentView.backgroundColor = UIColor.magenta
-        } else {
-            cell?.contentView.backgroundColor = nil
+        for element in string.characters {
+            
         }
+        
+        for item in stringElements {
+            
+            elementsCount[item] = (elementsCount[item] ?? 0) + 1
+            
+        }
+        
+        print(elementsCount)
+        
     }
     
     func filterContentForSearchText(searchText: String) {
@@ -124,9 +123,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CollectionViewCell
         
         let object : Element
-        // cell.layer.borderColor = UIColor.darkGray.cgColor
-        // cell.layer.cornerRadius = 8
-        // cell.layer.borderWidth = 1
         
         cell.layer.shouldRasterize = true
         cell.layer.rasterizationScale = UIScreen.main.scale
@@ -149,9 +145,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let cell = collectionView.cellForItem(at: indexPath) as! CollectionViewCell
-        // cell.layer.shouldRasterize = true
-        // cell.layer.rasterizationScale = UIScreen.main.scale
-    
+        
         newSelected = indexPath.row
         
         if newSelected == selectedRow {
@@ -162,7 +156,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             
         } else if newSelected != selectedRow && tapCount > 0 {
             
-            print("else if")
             tapCount = 0
             tapCount += 1
             selectedRow = newSelected
@@ -170,7 +163,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             
         } else {
             
-            print("else")
             selectedRow = newSelected
             tapCount += 1
             countLabel.text = cell.symbolLabel.text! + " - " + "\(tapCount)"
@@ -187,8 +179,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
     }
-
 
 }
 

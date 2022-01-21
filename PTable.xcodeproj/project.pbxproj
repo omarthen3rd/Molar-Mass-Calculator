@@ -19,6 +19,7 @@
 		5661BF8C1DEB94C9008059AD /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5661BF8B1DEB94C9008059AD /* Element.swift */; };
 		56AF7DB01DEB95A300E3AE53 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56AF7DAF1DEB95A300E3AE53 /* SwiftyJSON.framework */; };
 		56AF7DB21DEB98F200E3AE53 /* pt.json in Resources */ = {isa = PBXBuildFile; fileRef = 56AF7DB11DEB98F200E3AE53 /* pt.json */; };
+		56EC21921DF5A227009242F0 /* Spring.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56EC21911DF5A227009242F0 /* Spring.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		5661BF8B1DEB94C9008059AD /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
 		56AF7DAF1DEB95A300E3AE53 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		56AF7DB11DEB98F200E3AE53 /* pt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pt.json; sourceTree = "<group>"; };
+		56EC21911DF5A227009242F0 /* Spring.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Spring.framework; path = "../../../../Developer/Xcode/DerivedData/PTable-bdtrsramkzmkbdacoaktjrswjibw/Build/Products/Debug-iphoneos/Spring/Spring.framework"; sourceTree = "<group>"; };
 		B4520CC1AE5FA341135A2DAA /* Pods-PTable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTable.release.xcconfig"; path = "Pods/Target Support Files/Pods-PTable/Pods-PTable.release.xcconfig"; sourceTree = "<group>"; };
 		C1CC36706B4AE9835640FF87 /* Pods_PTable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PTable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -66,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56EC21921DF5A227009242F0 /* Spring.framework in Frameworks */,
 				56AF7DB01DEB95A300E3AE53 /* SwiftyJSON.framework in Frameworks */,
 				56448DD8963F9F9E2613748E /* Pods_PTable.framework in Frameworks */,
 			);
@@ -91,6 +94,7 @@
 		31112E3DD7410A160EBA8EFE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				56EC21911DF5A227009242F0 /* Spring.framework */,
 				56AF7DAF1DEB95A300E3AE53 /* SwiftyJSON.framework */,
 				C1CC36706B4AE9835640FF87 /* Pods_PTable.framework */,
 			);

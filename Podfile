@@ -5,5 +5,6 @@ target 'PTable' do
   use_frameworks!
 
   pod 'SwiftyJSON'
+  pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift3'
   
 end
